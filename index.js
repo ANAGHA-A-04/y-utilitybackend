@@ -15,7 +15,6 @@ const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/y-ultimate'
 mongoose.connect(mongoURI)
   .then(() => console.log('MongoDB connected...'))
   .catch(err => console.log(err));
-
 // API Routes
 const playersRouter = require('./routes/players');
 const teamsRouter = require('./routes/teams');
